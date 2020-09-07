@@ -1,0 +1,12 @@
+{
+  "name": "LeadGen Machine",
+  "version": "1.0.0",
+  "description": "Crawl google maps to create a list of leads",
+  "manifest_version": 2,
+  "permissions": ["declarativeContent", "activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [],
+  "web_accessible_resources": []
+}
