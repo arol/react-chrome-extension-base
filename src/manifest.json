@@ -1,12 +1,22 @@
 {
-  "name": "LeadGen Machine",
+  "short_name": "Project Name",
+  "name": "Project Name",
   "version": "1.0.0",
-  "description": "Crawl google maps to create a list of leads",
-  "manifest_version": 2,
-  "permissions": ["declarativeContent", "activeTab"],
-  "browser_action": {
-    "default_popup": "popup.html"
+  "description": "…",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "popup"
   },
-  "content_scripts": [],
-  "web_accessible_resources": []
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [],
+  "permissions": ["declarativeContent", "activeTab", "tabs"]
 }

@@ -13,6 +13,7 @@ module.exports = {
   entry: {
     popup: path.join(PATH_SOURCE, './popup.js'),
     background: path.join(PATH_SOURCE, './background.js'),
+    content: path.join(PATH_SOURCE, './content.js'),
   },
   output: {
     path: PATH_DIST,
